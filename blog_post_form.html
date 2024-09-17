@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #fffaee;
+            font-family: Helvetica, sans-serif;
+            color: #6D6A75;
+        }
+
+        h1 {
+            color:#45434a;
+        }
+
+        input {
+            padding: 12px 20px;
+            width: 25%;
+            border: none;
+            border-bottom: 2px solid #DEB841;
+            background-color: #fffbf4;
+            color: #6D6A75;
+        }
+
+        textarea {
+            width: 30%;
+            height: 300px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #DEB841;
+            border-radius: 4px;
+            background-color: #fffbf4;
+            resize: none;
+        }
+
+        select {
+            width: 25%;
+            padding: 12px 20px;
+            border: 2px solid #DEB841;
+            border-radius: 4px;
+            background-color: #fffbf4;
+        }
+
+        button {
+            background-color: #DE9E36;
+            color: #ffffff;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>New Blog Post</h1>
+    <form>
+
+        <label for="title">Title</label><br>
+        <input type="text" id="title" name="title"><br>
+        <br>
+
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <br>
+
+        <label for="content">Content</label><br>
+        <textarea name="content" rows="10" cols="30"></textarea><br>
+        <br>
+
+        <label for="category">Category</label>
+        <select id="category" name="category">
+            <option value="personal">Personal</option>
+            <option value="work">Work</option>
+        </select>
+        <br>
+        <br>
+
+        <button onclick="myFunction()">Submit</button>
+        <script>
+            function myFunction() {
+                alert("Form submitted!");
+            }
+        </script>
+    </form>
+</body>
+
+</html>
