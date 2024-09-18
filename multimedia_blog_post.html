@@ -2,43 +2,99 @@
 <html>
 
 <head>
+    <title>Via's Playground - Latest Post</title>
     <style>
         body {
             background-color: #fffaee;
             font-family: Helvetica, sans-serif;
             color: #6D6A75;
-            max-width: 500px;
+            max-width: 700px;
             margin: auto;
         }
 
         h1 {
-            color: #45434a;
+            color: white;
+            background-color: #DE9E36;
+            padding: 10px;
         }
 
         img {
             height: 50%;
             width: 50%;
         }
-    </style>
 
+        .embedded-container,
+        .audio-container,
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Fave Song</h1>
-
-    <p>Recently I've been obsessed with this song! Recently I've been obsessed with this song! Recently I've been obsessed with this song!</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1tk1pqwrOys?si=DdKke4PHj6dY2vs4"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>New Favorite Song</h1>
+    <p>One of the standout tracks from the anime Jujutsu Kaisen is "Kaikai Kitan" by Eve.
+        This dynamic song serves as the series’ opening theme,
+        perfectly encapsulating the thrilling blend of action and supernatural elements that fans have come to love.</p>
+    <figure>
+        <img src="https://m.media-amazon.com/images/M/MV5BNGY4MTg3NzgtMmFkZi00NTg5LWExMmEtMWI3YzI1ODdmMWQ1XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg"
+            alt="Jujutsu Kaisen Poster" class="image">
+        <figcaption>
+            <p style="font-size: small; text-align: center;">© Photo courtesy of Amazon Canada</p>
+        </figcaption>
+    </figure>
+    <p>The official music video showcases stunning visuals, combining scenes from Jujutsu Kaisen with striking
+        animations.
+        It perfectly captures the intensity and excitement of the show. Watch it here:</p>
+    <div class="embedded-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1tk1pqwrOys?si=DdKke4PHj6dY2vs4"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <br>
-
-    <p>It's the opening for the anime Jujutsu Kaisen.</p>
-    <img src="https://m.media-amazon.com/images/M/MV5BNGY4MTg3NzgtMmFkZi00NTg5LWExMmEtMWI3YzI1ODdmMWQ1XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg"
-        alt="Jujutsu Kaisen Poster">
-
-    <p>This is the karaoke version, if you want to sing along.</p>
-
+    <p>Feeling brave? The karaoke version of "Kaikai Kitan" lets you channel your inner sorcerer!
+        Sing along and bring the energy of the song to life with your own voice. Check it out here:</p>
+    <br>
+    <div class="audio-container">
+        <audio width="100%" controls>
+            <source src="sample.ogg" type="audio/ogg">
+            <source src="sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+    <br>
+    <p>To appreciate the depth of the lyrics, the lyric video offers a fantastic way to follow along.
+        With striking visuals and the poignant words displayed, it enhances the listening experience. Watch it here:</p>
+    <br>
+    <div class="video-container">
+        <video width="320" height="240" controls>
+            <source src="sample.mp4" type="video/mp4">
+            <source src="sample.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <br>
+    <p>"Kaikai Kitan" is more than just an opening theme; it’s an exhilarating experience that embodies the spirit of
+        Jujutsu Kaisen.
+        Whether you’re rewatching the series or singing along, this track is sure to energize and inspire.
+        Dive in and let the music take you on an adventure!</p>
+    <br>
+    <footer>
+        <p style="text-align: center; font-size: small;">Dummy text generated with ChatGPT.
+            <br>
+            © Copyright 2024
+        </p>
+    </footer>
 </body>
 
 </html>

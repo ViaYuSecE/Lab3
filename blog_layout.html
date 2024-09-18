@@ -2,58 +2,97 @@
 <html>
 
 <head>
+    <title>Via's Playground - Home</title>
     <style>
         body {
             background-color: #fffaee;
             font-family: Helvetica, sans-serif;
             color: #6D6A75;
-            max-width: 500px;
+            max-width: 700px;
             margin: auto;
         }
 
-        h1 {
+        h1,
+        .sidenav {
             color: #45434a;
         }
 
         ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #DE9E36;
+        }
 
-li {
-  float: left;
-}
+        li {
+            float: left;
+        }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 45px;
+            text-decoration: none;
+        }
 
-li a:hover {
-  background-color: #111;
-}
+        li a:hover {
+            background-color: #DEB841;
+        }
 
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #DEB841;
+            overflow-x: hidden;
+            padding: 20px;
+        }
     </style>
-
 </head>
 
 <body>
-
-<h1>Via's Blog</h1>
+    <h1 style="font-size: xxx-large; text-align: center;">Via's Playground</h1>
 
     <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="archives.asp">Archives</a></li>
-        <li><a href="submit.asp">Submit</a></li>
-        <li><a href="latest.asp">Latest</a></li>
+        <li><a href="blog_layout.html">Home</a></li>
+        <li><a href="table_of_contents.html">Blog Archives</a></li>
+        <li><a href="blog_post_form.html">Add New Post</a></li>
+        <li><a href="multimedia_blog_post.html">Latest Post</a></li>
     </ul>
 
+    <iframe src="multimedia_blog_post.html" height="1000px" width="99.5%" style="border:2px solid #DEB841;"
+        title="latest"></iframe>
+
+    <div class="sidenav">
+        <h2>About Me</h2>
+        <img src="https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg" width="100%" alt="Via">
+        <p style="font-size: small;">Meet Via, someone who brings a refreshing perspective to everything they do.
+            <br>
+            With a natural curiosity and a thoughtful approach, Via has a knack for connecting ideas and people in
+            meaningful
+            ways.
+            <br>
+            <br>
+            Whether it's through their work, hobbies, or everyday interactions, Via's enthusiasm and genuine nature make
+            a
+            positive impact.
+            <br>
+            Always ready to lend a hand or share a new insight, Via’s presence is one that enriches any conversation or
+            project.
+        </p>
+    </div>
+
+    <footer>
+        <p style="text-align: center; font-size: small;">"About Me" dummy text generated with ChatGPT.
+            <br>
+            © Copyright 2024
+        </p>
+    </footer>
 </body>
 
 </html>
